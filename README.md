@@ -1,2 +1,2 @@
-# Pair-VPR
-[Under Review] The official repository for Pair-VPR: Place-Aware Pre-training and Contrastive Pair Classification for Visual Place Recognition with Vision Transformers
+# Pair-VPR Website Repo
+This is the branch that contains the source code for the Pair-VPR website.
