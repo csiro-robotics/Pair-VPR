@@ -42,7 +42,7 @@ The pre-print version of the paper is available on arxiv at:
 
 <div align="center">
             <a href="https://arxiv.org/abs/2410.06614">
-            <img  src="assets/imgs/pairvpr_paper_img.png" height="440" width="340" />
+            <img  src="assets/imgs/pairvpr_paper_image.png" height="440" width="340" />
             </a>
             <p><a href="https://arxiv.org/abs/2410.06614"><strong>Pre-print of our paper: "Pair-VPR: Place-Aware Pre-training and Contrastive Pair Classification for Visual Place Recognition with Vision Transformers"</strong></a></p>
 </div>
