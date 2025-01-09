@@ -1,0 +1,59 @@
+encoder:
+  model_name: "dinov2_vitb14_reg"
+  num_trainable_blocks: 6  # last 6 blocks are trained, first 6 are frozen
+  return_classtok: true
+decoder: # currently configured to ViT-B size
+  dec_embed_dim: 768
+  dec_num_heads: 12
+  dec_depth: 12
+  mlp_ratio: 4
+masking:
+  mask_ratio: 0.9
+  patch_size: 14 # based on encoder, 14 for Dino ViT arch
+optim:
+  epochs: 500
+  weight_decay: 0.04
+  weight_decay_end: 0.4
+  base_lr: 0.0003  # learning rate for a batch size of 1024
+  lr: 0.  # will be set after applying scaling rule
+  warmup_epochs: 10
+  min_lr: 1.0e-06
+  scaling_rule: sqrt_wrt_1024
+  patch_embed_lr_mult: 0.2
+  layerwise_decay: 0.9
+  adamw_beta1: 0.9
+  adamw_beta2: 0.999
+  amp: true
+train:
+  batch_size_per_gpu: 256 # use two GPUs for a total batch size of 512
+  seed: 0
+  num_workers: 16
+  norm_pix_loss: 1  # normalise patches by mean and std before applying loss
+  keep_freq: 10  # save a unique checkpoint every 10 epochs
+  save_freq: 1   # save a rolling checkpoint every epoch
+  classtoken: false  # adds classtoken to decoder, only set to true in stage two
+  random: false  # make true to delete Dino pre-trained weights
+sfxl:
+  M: 15
+  N: 1
+  focal_dist: 10
+  focal_dist_max: 20  # only valid when dynamic_mode is used
+  dynamic_mode: true  # set to false to disable random focal lengths between focal_dist and focal_dist_max 
+  angle_check: true
+  s: 10
+  m: 0.4
+  lambda_lat: 1.
+  lambda_front: 1.
+  groups_num: 0
+  min_images_per_class: 5
+augmentation:
+  img_res: 224 # img_res here must be the same as below
+  transform: 'crop224,acolor'
+globaldesc:
+  dim: 512  # dimensionality of global descriptor from encoder (unused in stage one)
+dataset_locations: # modify for your local machine
+  sfxl: "sf_dataset/raw/train/panoramas"
+  gsv: "gsv_cities"
+  gldv2: "google-landmark/train"
+  msls: "Mapillary_Street_Level_Sequences"
+  pitts: "Pittsburgh250k"

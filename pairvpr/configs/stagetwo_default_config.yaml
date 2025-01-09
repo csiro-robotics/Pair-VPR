@@ -1,0 +1,35 @@
+encoder:
+  model_name: "dinov2_vitb14_reg"
+  num_trainable_blocks: 6 # number of dino layers trained during fine-tuning
+  return_classtok: true
+decoder:
+  dec_embed_dim: 768
+  dec_num_heads: 12
+  dec_depth: 12
+  mlp_ratio: 4
+  norm_im2_in_dec: true
+masking:
+  mask_ratio: 0.9
+  patch_size: 14 # based on encoder
+optim:
+  epochs: 10
+  weight_decay: 0.05
+  base_lr: 0.00008
+  schedulemaxiters: 6225
+  locallossweight: 2.0
+train:
+  batch_size_per_gpu: 20 # total batch size of 100
+  num_workers: 12
+  num_gpus: 5
+  classtoken: true
+  random: false
+augmentation:
+  img_res: 322
+globaldesc:
+  dim: 512
+dataset_locations: # modify for your local machine
+  sfxl: "sf_dataset/raw/train/panoramas"
+  gsv: "gsv_cities"
+  gldv2: "google-landmark/train"
+  msls: "Mapillary_Street_Level_Sequences"
+  pitts: "Pittsburgh250k"

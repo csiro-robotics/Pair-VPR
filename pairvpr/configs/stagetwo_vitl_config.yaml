@@ -1,0 +1,17 @@
+encoder:
+  model_name: "dinov2_vitl14_reg"
+  num_trainable_blocks: 6
+  return_classtok: true
+optim:
+  epochs: 10
+  weight_decay: 0.05
+  base_lr: 0.00008
+  schedulemaxiters: 6225
+  locallossweight: 2.0
+train:
+  batch_size_per_gpu: 14 # total batch size of 98
+  num_workers: 12
+  num_gpus: 7
+  classtoken: true
+globaldesc:
+  dim: 512

@@ -1,0 +1,27 @@
+encoder:
+  model_name: "dinov2_vitg14_reg"
+  num_trainable_blocks: 20
+  return_classtok: true
+optim:
+  epochs: 1000
+  weight_decay: 0.04
+  weight_decay_end: 0.4
+  base_lr: 0.0003  # learning rate for a batch size of 1024
+  lr: 0.  # will be set after applying scaling rule
+  warmup_epochs: 10
+  min_lr: 1.0e-06
+  clip_grad: 3.0
+  freeze_last_layer_epochs: 1
+  scaling_rule: sqrt_wrt_1024
+  patch_embed_lr_mult: 0.2
+  layerwise_decay: 0.95 # Vit-G is deep and don't want grads to get too small in the encoder
+  adamw_beta1: 0.9
+  adamw_beta2: 0.999
+  amp: true
+train:
+  batch_size_per_gpu: 64 # require 8 GPUs for a total batch size of 512
+  num_workers: 16
+  keep_freq: 20  # save a unique checkpoint every 20 epochs
+  save_freq: 1   # save a rolling checkpoint every epoch
+globaldesc:
+  dim: 512
