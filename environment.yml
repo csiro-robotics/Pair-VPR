@@ -1,0 +1,24 @@
+name: pairvpr
+channels:
+  - defaults
+  - xformers
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pytorch::pytorch==2.5.0
+  - pytorch::pytorch-cuda=12.1
+  - pytorch::torchvision==0.20.0
+  - xformers
+  - omegaconf
+  - tqdm
+  - wandb
+  - pip
+  - pip:
+    - pandas==2.1.3
+    - faiss-cpu
+    - prettytable
+    - pytorch-metric-learning
+    - Pillow
+    - matplotlib
