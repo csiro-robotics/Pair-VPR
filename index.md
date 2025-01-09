@@ -33,7 +33,7 @@ We show some qualitative results from Pair-VPR, using the speed version. We prov
 
 ### Github Code
  <p>
-    We will provide the code for Pair-VPR <a href="https://github.com/csiro-robotics/Pair-VPR">in our GitHub repository</a>. Code will be released soon, please Star or Watch this repository to be notified when we release the code.
+    Code and models for Pair-VPR are available at <a href="https://github.com/csiro-robotics/Pair-VPR">in our GitHub repository</a>.
 </p>
 
 ### Paper
