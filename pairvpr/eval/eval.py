@@ -183,8 +183,8 @@ def test(cfg, val_dataloaders, model, val_set_names, val_datasets,
                         dbimg, _ = val_dataset[p]
                         dbimgs.append(dbimg)
                     dbimgs_tensor = torch.stack(dbimgs, dim=0)
-                    qfeat, _ = model(qimg.to(device).unsqueeze(0), None)
-                    dbfeats, _ = model(dbimgs_tensor.to(device), None)
+                    qfeat, _ = model(qimg.to(device).unsqueeze(0), None, mode='global')
+                    dbfeats, _ = model(dbimgs_tensor.to(device), None, mode='global')
                     qfeats = qfeat.repeat(len(pred), 1, 1)
 
                 # now assemble the pairs
