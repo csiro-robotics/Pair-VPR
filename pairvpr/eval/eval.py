@@ -136,9 +136,8 @@ def test(cfg, val_dataloaders, model, val_set_names, val_datasets,
         feats = torch.concat(feats, dim=0)
         if not cfg.eval.memoryeffmode:
             densefeats = torch.concat(densefeats, dim=0)
-
-        total_memory = ((densefeats.numpy().size * densefeats.numpy().itemsize)/1024) # kB
-        print('---PairVPR requires this many kB per image: ', str((total_memory/len(val_dataset))+2))
+            total_memory = ((densefeats.numpy().size * densefeats.numpy().itemsize)/1024) # kB
+            print('---PairVPR requires this many kB per image: ', str((total_memory/len(val_dataset))+2))
 
         r_list = feats[: num_references]
         q_list = feats[num_references:]
