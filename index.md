@@ -1,4 +1,4 @@
-## Pair-VPR: Place-Aware Pre-training and Contrastive Pair Classification for Visual Place Recognition with Vision Transformers (IEEE RA_L 2025)
+## Pair-VPR: Place-Aware Pre-training and Contrastive Pair Classification for Visual Place Recognition with Vision Transformers (IEEE RA-L 2025)
       
 
 ### Abstract
