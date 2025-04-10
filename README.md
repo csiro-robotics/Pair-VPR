@@ -1,8 +1,29 @@
 # [IEEE RA-L 2025] Pair-VPR: Place-Aware Pre-training and Contrastive Pair Classification for Visual Place Recognition with Vision Transformers 
 
+<!-- markdownlint-disable first-line-h1 -->
+<!-- markdownlint-disable html -->
+<!-- markdownlint-disable no-duplicate-header -->
+
+<p align="center">
+  <a href="https://github.com/csiro-robotics/Pair-VPR/commits/main">
+    <img src="https://img.shields.io/github/last-commit/csiro-robotics/Pair-VPR" alt="Last Commit" />
+  </a>
+  <a href="https://github.com/csiro-robotics/Pair-VPR/issues">
+    <img src="https://img.shields.io/github/issues/csiro-robotics/Pair-VPR" alt="Issues" />
+  </a>
+  <a href="https://github.com/csiro-robotics/Pair-VPR/pulls">
+    <img src="https://img.shields.io/github/issues-pr/csiro-robotics/Pair-VPR" alt="Pull Requests" />
+  </a>
+  <a href="https://github.com/csiro-robotics/Pair-VPR/stargazers">
+    <img src="https://img.shields.io/github/stars/csiro-robotics/Pair-VPR?style=social" alt="Stars" />
+  </a>
+</p>
+
 The official repository of "[Pair-VPR: Place-Aware Pre-training and Contrastive Pair Classification for Visual Place Recognition with Vision Transformers](https://ieeexplore.ieee.org/document/10906598)" published in the IEEE Robotics and Automation Letters, 2025. 
 
 Pre-print paper link: [Arxiv](https://arxiv.org/abs/2410.06614)
+
+
 
 ### Overview
 
@@ -51,14 +72,15 @@ For speed during training, validation is only performed using the global descrip
 ### Citation
 
 ```
-@inproceedings{hausler2024pairvpr,
-  title = {Pair-VPR: Place-Aware Pre-training and Contrastive Pair Classification for Visual Place Recognition with Vision Transformers},
-  shorttitle = {Pair-VPR},
-  doi = {https://doi.org/10.48550/arXiv.2410.06614},
-  booktitle = {Arxiv},
-  author = {Hausler, Stephen and Moghadam, Peyman},
-  month = Oct,
-  year = {2024}
+@article{hausler2025pairvpr,
+  author={Hausler, Stephen and Moghadam, Peyman},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Pair-VPR: Place-Aware Pre-Training and Contrastive Pair Classification for Visual Place Recognition With Vision Transformers}, 
+  year={2025},
+  volume={10},
+  number={4},
+  pages={4013-4020},
+  doi={10.1109/LRA.2025.3546512}
 }
 ```
 
