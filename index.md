@@ -52,14 +52,15 @@ The pre-print version of the paper is available on arxiv at:
 If you find this paper helpful for your research, please cite our paper using the following reference:
 
 <pre><code class="citation">
-@inproceedings{hausler2024pairvpr,
-  title = {Pair-VPR: Place-Aware Pre-training and Contrastive Pair Classification for Visual Place Recognition with Vision Transformers},
-  shorttitle = {Pair-VPR},
-  doi = {https://doi.org/10.48550/arXiv.2410.06614},
-  booktitle = {Arxiv},
-  author = {Hausler, Stephen and Moghadam, Peyman},
-  month = Oct,
-  year = {2024}
+@article{hausler2025pairvpr,
+  author={Hausler, Stephen and Moghadam, Peyman},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Pair-VPR: Place-Aware Pre-Training and Contrastive Pair Classification for Visual Place Recognition With Vision Transformers}, 
+  year={2025},
+  volume={10},
+  number={4},
+  pages={4013-4020},
+  doi={10.1109/LRA.2025.3546512}
 }
 </code></pre>
 </p>
