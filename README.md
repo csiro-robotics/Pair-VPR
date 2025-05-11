@@ -19,6 +19,16 @@
   </a>
 </p>
 
+
+<div align="center" style="line-height: 1;">
+  <a href="https://huggingface.co/CSIRORobotics/Pair-VPR)" target="_blank" style="margin: 2px;">
+    <img alt="Hugging Face"
+         src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Pair--VPR-ffc107?color=ffc107&logoColor=white"
+         style="display: inline-block; vertical-align: middle;"/>
+  </a>
+</div>
+
+
 The official repository of "[Pair-VPR: Place-Aware Pre-training and Contrastive Pair Classification for Visual Place Recognition with Vision Transformers](https://ieeexplore.ieee.org/document/10906598)" published in the IEEE Robotics and Automation Letters, 2025. 
 
 Pre-print paper link: [Arxiv](https://arxiv.org/abs/2410.06614)
@@ -43,7 +53,7 @@ Finally, to save time it is recommended to download our pre-computed sfxl datase
 
 ### Pre-trained Model Download
 
-Pre-trained Pair-VPR models can be downloaded from: https://tinyurl.com/Pair-VPR-models or from our HugginFace page: 
+Pre-trained Pair-VPR models can be downloaded from: https://tinyurl.com/Pair-VPR-models or from our HuggingFace page: 
 
 <div align="center">
 
