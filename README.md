@@ -77,7 +77,7 @@ Pre-trained Pair-VPR models can be downloaded from: https://tinyurl.com/Pair-VPR
 
 |      **Model**      | **Download**                                                                                  |
 | :-----------------: | ------------------------------------------------------------------------------------------    |
-| pairvpr-vitB        | [🤗 HuggingFace](https://huggingface.co/CSIRORobotics/Pair-VPR/resolve/main/airvpr-vitB.pth)  |
+| pairvpr-vitB        | [🤗 HuggingFace](https://huggingface.co/CSIRORobotics/Pair-VPR/resolve/main/pairvpr-vitB.pth) |
 | pairvpr-vitL        | [🤗 HuggingFace](https://huggingface.co/CSIRORobotics/Pair-VPR/resolve/main/pairvpr-vitL.pth) |
 | pairvpr-vitG        | [🤗 HuggingFace](https://huggingface.co/CSIRORobotics/Pair-VPR/resolve/main/pairvpr-vitG.pth) |
 
