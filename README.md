@@ -21,11 +21,28 @@
 
 
 <div align="center" style="line-height: 1;">
-  <a href="https://huggingface.co/CSIRORobotics/Pair-VPR)" target="_blank" style="margin: 2px;">
+  <a href="https://huggingface.co/CSIRORobotics/Pair-VPR" target="_blank" style="margin: 2px;">
     <img alt="Hugging Face"
          src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Pair--VPR-ffc107?color=ffc107&logoColor=white"
          style="display: inline-block; vertical-align: middle;"/>
   </a>
+
+  <!-- RA-L badge -->
+  <a href="https://ieeexplore.ieee.org/document/10906598/" target="_blank" style="margin: 2px;">
+    <img alt="IEEE RA-L"
+         src="https://img.shields.io/badge/%F0%9F%93%84%20RA--L-Published-blue?logo=ieee&logoColor=white"
+         style="display: inline-block; vertical-align: middle;" />
+  </a>
+
+  <!-- Project Website badge -->
+  <a href="https://csiro-robotics.github.io/Pair-VPR/" target="_blank" style="margin: 2px;">
+    <img alt="Project Website"
+         src="https://img.shields.io/badge/%F0%9F%8C%90%20Project-Website-2ea44f?logo=githubpages&logoColor=white"
+         style="display: inline-block; vertical-align: middle;" />
+  </a>
+
+</div>
+
 </div>
 
 
