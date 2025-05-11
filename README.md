@@ -43,7 +43,19 @@ Finally, to save time it is recommended to download our pre-computed sfxl datase
 
 ### Pre-trained Model Download
 
-Pre-trained Pair-VPR models can be downloaded from: https://tinyurl.com/Pair-VPR-models
+Pre-trained Pair-VPR models can be downloaded from: https://tinyurl.com/Pair-VPR-models or from our HugginFace page: 
+
+<div align="center">
+
+|      **Model**      | **Download**                                                                      |
+| :-----------------: | ------------------------------------------------------------------------------    |
+| pairvpr-vitB        | [🤗 HuggingFace](https://huggingface.co/CSIRORobotics/Pair-VPR/pairvpr-vitB.pth)  |
+| pairvpr-vitL        | [🤗 HuggingFace](https://huggingface.co/CSIRORobotics/Pair-VPR/pairvpr-vitL.pth)  |
+| pairvpr-vitG        | [🤗 HuggingFace](https://huggingface.co/CSIRORobotics/Pair-VPR/pairvpr-vitG.pth)  |
+
+
+</div>
+
 
 ### Inference
 
