@@ -30,20 +30,21 @@
   <!-- RA-L badge -->
   <a href="https://ieeexplore.ieee.org/document/10906598/" target="_blank" style="margin: 2px;">
     <img alt="IEEE RA-L"
-         src="https://img.shields.io/badge/%F0%9F%93%84%20RA--L-Published-blue?logo=ieee&logoColor=white"
+         src="https://img.shields.io/badge/%F0%9F%93%84%20RA--L-Published-blue"
          style="display: inline-block; vertical-align: middle;" />
   </a>
 
   <!-- Project Website badge -->
   <a href="https://csiro-robotics.github.io/Pair-VPR/" target="_blank" style="margin: 2px;">
     <img alt="Project Website"
-         src="https://img.shields.io/badge/%F0%9F%8C%90%20Project-Website-2ea44f?logo=githubpages&logoColor=white"
+         src="https://img.shields.io/badge/%F0%9F%8C%90%20Project-Website-2ea44f"
          style="display: inline-block; vertical-align: middle;" />
   </a>
 
 </div>
 
-</div>
+
+### Introduction 
 
 
 The official repository of "[Pair-VPR: Place-Aware Pre-training and Contrastive Pair Classification for Visual Place Recognition with Vision Transformers](https://ieeexplore.ieee.org/document/10906598)" published in the IEEE Robotics and Automation Letters, 2025. 
@@ -74,11 +75,11 @@ Pre-trained Pair-VPR models can be downloaded from: https://tinyurl.com/Pair-VPR
 
 <div align="center">
 
-|      **Model**      | **Download**                                                                      |
-| :-----------------: | ------------------------------------------------------------------------------    |
-| pairvpr-vitB        | [🤗 HuggingFace](https://huggingface.co/CSIRORobotics/Pair-VPR/pairvpr-vitB.pth)  |
-| pairvpr-vitL        | [🤗 HuggingFace](https://huggingface.co/CSIRORobotics/Pair-VPR/pairvpr-vitL.pth)  |
-| pairvpr-vitG        | [🤗 HuggingFace](https://huggingface.co/CSIRORobotics/Pair-VPR/pairvpr-vitG.pth)  |
+|      **Model**      | **Download**                                                                                  |
+| :-----------------: | ------------------------------------------------------------------------------------------    |
+| pairvpr-vitB        | [🤗 HuggingFace](https://huggingface.co/CSIRORobotics/Pair-VPR/resolve/main/airvpr-vitB.pth)  |
+| pairvpr-vitL        | [🤗 HuggingFace](https://huggingface.co/CSIRORobotics/Pair-VPR/resolve/main/pairvpr-vitL.pth) |
+| pairvpr-vitG        | [🤗 HuggingFace](https://huggingface.co/CSIRORobotics/Pair-VPR/resolve/main/pairvpr-vitG.pth) |
 
 
 </div>
