@@ -42,7 +42,18 @@
   </a>
 
 </div>
+<br><br>
+<div align="center" style="line-height: 1;">
+  
+  <!-- Dynamic SOTA badges from PapersWithCode -->
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/pair-vpr-place-aware-pre-training-and/visual-place-recognition-on-mapillary-test)](https://paperswithcode.com/sota/visual-place-recognition-on-mapillary-test?p=pair-vpr-place-aware-pre-training-and)
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/pair-vpr-place-aware-pre-training-and/visual-place-recognition-on-mapillary-val)](https://paperswithcode.com/sota/visual-place-recognition-on-mapillary-val?p=pair-vpr-place-aware-pre-training-and)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/pair-vpr-place-aware-pre-training-and/visual-place-recognition-on-pittsburgh-30k)](https://paperswithcode.com/sota/visual-place-recognition-on-pittsburgh-30k?p=pair-vpr-place-aware-pre-training-and)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/pair-vpr-place-aware-pre-training-and/visual-place-recognition-on-tokyo247)](https://paperswithcode.com/sota/visual-place-recognition-on-tokyo247?p=pair-vpr-place-aware-pre-training-and)
+</div>
 
 ### Introduction 
 
