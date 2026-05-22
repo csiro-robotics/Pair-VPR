@@ -1,0 +1,95 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.navbar {
+  box-shadow: 0 1px 0 rgba(10, 10, 10, 0.06);
+}
+
+.footer .icon-link {
+  font-size: 25px;
+  color: #000;
+}
+
+.link-block a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser {
+  font-family: 'Google Sans', sans-serif;
+}
+
+.publication-title,
+.publication-authors {
+  font-family: 'Google Sans', sans-serif;
+}
+
+.publication-title {
+  line-height: 1.12;
+}
+
+.publication-authors a {
+  color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+  text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.publication-links {
+  margin-top: 1rem;
+}
+
+.huggingface-icon {
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+.hero.teaser img,
+.publication-figure img {
+  width: 100%;
+  display: block;
+}
+
+.publication-figure {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.paper-preview img {
+  max-width: 340px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 10px 28px rgba(10, 10, 10, 0.12);
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.section-anchor {
+  scroll-margin-top: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .publication-title {
+    font-size: 2rem !important;
+    line-height: 1.15;
+  }
+
+  .hero .hero-body {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}

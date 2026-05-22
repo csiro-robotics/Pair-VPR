@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Pair-VPR: Place-aware Pre-training and Contrastive Pair Classification for Visual Place Recognition with Vision Transformers.">
+  <meta name="keywords" content="Pair-VPR, Visual Place Recognition, Vision Transformers, Place Recognition, IEEE RA-L 2025">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pair-VPR</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://github.com/csiro-robotics/Pair-VPR">
+        <span class="icon">
+          <i class="fas fa-home"></i>
+        </span>
+      </a>
+      <a class="navbar-item" href="#abstract">Abstract</a>
+      <a class="navbar-item" href="#method">Method</a>
+      <a class="navbar-item" href="#results">Results</a>
+      <a class="navbar-item" href="#citation">Citation</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Pair-VPR: Place-Aware Pre-training and Contrastive Pair Classification for Visual Place Recognition with Vision Transformers</h1>
+          <h2 class="subtitle is-4">IEEE Robotics and Automation Letters, 2025</h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Stephen Hausler<sup>1</sup>,</span>
+            <span class="author-block"><a href="https://scholar.google.com.au/citations?user=QAVcuWUAAAAJ&hl=en">Peyman Moghadam</a><sup>1,2</sup></span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>CSIRO Robotics</span>
+            <span class="author-block"><sup>2</sup>Queensland University of Technology</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://ieeexplore.ieee.org/document/10906598/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/csiro-robotics/Pair-VPR"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://huggingface.co/CSIRORobotics/Pair-VPR"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon huggingface-icon" aria-hidden="true">🤗</span>
+                  <span>Models</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./assets/imgs/vpr_hero_figure_lowres.jpg" alt="Pair-VPR two-stage training overview with place-aware pre-training and VPR task training.">
+      <h2 class="subtitle has-text-centered">
+        Pair-VPR jointly learns a global descriptor and a pair classifier for visual place recognition re-ranking.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 section-anchor" id="abstract">Overview / Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            In this work we propose a novel joint training method for Visual Place Recognition (VPR), which simultaneously learns a global descriptor and a pair classifier for re-ranking. The pair classifier can predict whether a given pair of images are from the same place or not. The network only comprises Vision Transformer components for both the encoder and the pair classifier, and both components are trained using their respective class tokens.
+          </p>
+          <p>
+            In existing VPR methods, typically the network is initialized using pre-trained weights from a generic image dataset such as ImageNet. In this work we propose an alternative pre-training strategy, by using Siamese Masked Image Modelling as a pre-training task. We propose a place-aware image sampling procedure from a collection of large VPR datasets for pre-training our model, to learn visual features tuned specifically for VPR.
+          </p>
+          <p>
+            By re-using the Masked Image Modelling encoder and decoder weights in the second stage of training, Pair-VPR can achieve state-of-the-art VPR performance across five benchmark datasets with a ViT-B encoder, along with further improvements in localization recall with larger encoders.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 section-anchor" id="method">Method Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            Pair-VPR uses global descriptor database searching to generate a list of top candidates, then uses a pair classifier to estimate which is the best matching database image given a query image. Pair-VPR is trained in two stages as shown below.
+          </p>
+        </div>
+        <div class="publication-figure">
+          <img src="./assets/imgs/vpr_hero_figure_lowres.jpg" alt="Pair-VPR training stages.">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            During Stage 1 of training, we train a ViT encoder and decoder using siamese masked image modelling with place-aware sampling from large-scale and diverse VPR datasets. In Stage 2, we re-use both the pre-trained encoder and decoder and train specifically for the VPR task, jointly learning a global descriptor and a pair classifier.
+          </p>
+        </div>
+
+        <h3 class="title is-4">Pair-VPR Inference</h3>
+        <div class="content has-text-justified">
+          <p>
+            After training Pair-VPR, it can be used to first generate global descriptors for every image, then for a list of top database candidates, the top candidates can be re-ranked using Pair-VPR.
+          </p>
+        </div>
+        <div class="publication-figure">
+          <img src="./assets/imgs/vpr_eval_figure.jpg" alt="Pair-VPR inference and re-ranking pipeline.">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            Given a query and database image, encoded features are passed into the transformer decoder twice in alternating input orders, and the transformer decoder outputs a similarity score from the output of a class token. The two similarity scores are summed to produce the final Pair-VPR similarity score for a given pair. In practice, Pair-VPR can run in a batch where each batch is a tensor of query and database pairs, allowing re-ranking to be performed using a single forward pass through the Pair-VPR decoder.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 section-anchor" id="results">Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            We provide two variants of Pair-VPR: a performance version, Pair-VPR-p, and a speed version, Pair-VPR-s. The performance version has more top candidates and uses a ViT-G encoder. Both models achieve the highest Recall@1 result on the five benchmark VPR datasets, and the performance version is useful when accurate VPR is essential. The speed version allows for VPR retrieval with under 1 second latency.
+          </p>
+        </div>
+        <div class="publication-figure">
+          <img src="./assets/imgs/VPR_results_table.png" alt="Pair-VPR benchmark results table.">
+        </div>
+
+        <h3 class="title is-4">Qualitative Results</h3>
+        <div class="content has-text-justified">
+          <p>
+            We show qualitative results from Pair-VPR using the speed version. The examples include successes and a failure case per dataset, demonstrating that Pair-VPR can operate even with severe viewpoint shift, seasonal changes, and night-time imagery.
+          </p>
+        </div>
+        <div class="publication-figure">
+          <img src="./assets/imgs/qual_fig_website_lowres.jpg" alt="Pair-VPR qualitative retrieval examples.">
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 section-anchor" id="paper">Paper</h2>
+        <div class="content has-text-justified">
+          <p>
+            The published paper is available through <a href="https://ieeexplore.ieee.org/document/10906598/">IEEE Xplore</a>, and the pre-print version is available on <a href="https://arxiv.org/abs/2410.06614">arXiv</a>.
+          </p>
+        </div>
+        <div class="content has-text-centered paper-preview">
+          <a href="https://arxiv.org/abs/2410.06614">
+            <img src="./assets/imgs/pairvpr_paper_image.png" alt="Pair-VPR paper preview.">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-anchor" id="citation">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <p>If you find this paper helpful for your research, please cite our paper using the following reference:</p>
+    <pre><code>@article{hausler2025pairvpr,
+  author={Hausler, Stephen and Moghadam, Peyman},
+  journal={IEEE Robotics and Automation Letters},
+  title={Pair-VPR: Place-Aware Pre-Training and Contrastive Pair Classification for Visual Place Recognition With Vision Transformers},
+  year={2025},
+  volume={10},
+  number={4},
+  pages={4013-4020},
+  doi={10.1109/LRA.2025.3546512}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://ieeexplore.ieee.org/document/10906598/">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/csiro-robotics/Pair-VPR">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Website template adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+          <p>
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
